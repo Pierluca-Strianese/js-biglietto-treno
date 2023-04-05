@@ -8,14 +8,14 @@ const chilometri = prompt('Quanti km vuoi percorrere?');
 
 const eta = prompt('Quale e\' la tua eta\'');
 
-let prezzofinale = Math.round (chilometri * 0.21);
+let prezzofinale = (chilometri * 0.21);
 
 if (eta < 18) {
-    prezzofinale = Math.round ((chilometri * 0.21) - ((chilometri * 0.21) / 100 * 20));
+    prezzofinale = ((chilometri * 0.21) - ((chilometri * 0.21) / 100 * 20));
 }
 
 if (eta > 65) {
-    prezzofinale = Math.round ((chilometri * 0.21) - ((chilometri * 0.21) / 100 * 40));
+    prezzofinale = ((chilometri * 0.21) - ((chilometri * 0.21) / 100 * 40));
 }
 
 
